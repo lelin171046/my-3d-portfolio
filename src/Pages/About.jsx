@@ -1,114 +1,86 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-
-import { CTA } from "../components";
-import { experiences, skills } from "../constants";
-
-import "react-vertical-timeline-component/style.min.css";
+import React from "react";
+import profileImg from "../assets/images/monir.png"
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className='max-container'>
-      <h1 className='head-text'>
-        Hello, I'm{" "}
-        <span className='blue-gradient_text font-semibold drop-shadow'>
-          {" "}
-          Adrian
-        </span>{" "}
-        👋
-      </h1>
-
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>
-          Software Engineer based in Croatia, specializing in technical
-          education through hands-on learning and building applications.
+    <section className="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+      {/* Hero Section */}
+      <div className="text-center py-16">
+        <h2 className="text-lg font-semibold text-blue-500 uppercase">Hi!</h2>
+        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">
+          I am <span className="text-blue-600">Zaman Lelin</span>
+        </h1>
+        <p className="text-gray-600 mt-3 text-lg">
+          React.js Developer & MERN Stack Developer
         </p>
+        <Link to={'/projects'}>
+        <button className="mt-6 px-6 py-3 bg-black text-white rounded-full shadow hover:bg-blue-700 transition">
+          Visit My Works
+        </button>
+        </Link>
       </div>
 
-      <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My Skills</h3>
+      {/* About Me Section */}
+      <div className="max-w-5xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10 items-center">
+        <div className="flex justify-center">
+          <img
+            src={profileImg}
+            alt="Profile"
+            className="w-60 h-60 rounded-full border-4 border-blue-500 object-cover"
+          />
+        </div>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
-          {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
-              <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
-                <img
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
-                />
-              </div>
+        <div>
+          <h3 className="text-blue-600 text-sm font-semibold uppercase mb-1">
+            Who Am I?
+          </h3>
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">About Me</h2>
+          <p className="text-gray-600 leading-relaxed">
+            I’m a passionate <span className="font-semibold">React.js</span> and{" "}
+            <span className="font-semibold">MERN Stack Developer</span> with a
+            solid foundation in modern web technologies. I also have strong
+            skills in <span className="font-semibold">HTML</span>,{" "}
+            <span className="font-semibold">CSS</span>, and{" "}
+            <span className="font-semibold">JavaScript</span>. I love building
+            clean, efficient, and user-friendly web applications that make a
+            real impact.
+          </p>
+
+          <button className="mt-6 px-5 py-2 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">
+            Download CV
+          </button>
+        </div>
+      </div>
+
+      {/* What I Do Section */}
+      <div className="bg-blue-50 py-16">
+        <div className="text-center mb-12">
+          <h3 className="text-blue-600 text-sm font-semibold uppercase mb-1">
+            What I Do
+          </h3>
+          <h2 className="text-3xl font-bold text-gray-900">My Services</h2>
+        </div>
+
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
+          {[
+            { title: "React.js Development", icon: "💻" },
+            { title: "MERN Stack Projects", icon: "🌐" },
+            { title: "Frontend Design", icon: "🎨" },
+            { title: "API Integration", icon: "⚙️" },
+          ].map((service, index) => (
+            <div
+              key={index}
+              className="p-6 bg-white rounded-2xl shadow hover:shadow-lg text-center transition"
+            >
+              <div className="text-4xl mb-3">{service.icon}</div>
+              <h4 className="text-lg font-semibold text-gray-800">
+                {service.title}
+              </h4>
             </div>
           ))}
         </div>
       </div>
-
-      <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience.</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-          <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
-          </p>
-        </div>
-
-        <div className='mt-12 flex'>
-          <VerticalTimeline>
-            {experiences.map((experience, index) => (
-              <VerticalTimelineElement
-                key={experience.company_name}
-                date={experience.date}
-                iconStyle={{ background: experience.iconBg }}
-                icon={
-                  <div className='flex justify-center items-center w-full h-full'>
-                    <img
-                      src={experience.icon}
-                      alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
-                    />
-                  </div>
-                }
-                contentStyle={{
-                  borderBottom: "8px",
-                  borderStyle: "solid",
-                  borderBottomColor: experience.iconBg,
-                  boxShadow: "none",
-                }}
-              >
-                <div>
-                  <h3 className='text-black text-xl font-poppins font-semibold'>
-                    {experience.title}
-                  </h3>
-                  <p
-                    className='text-black-500 font-medium text-base'
-                    style={{ margin: 0 }}
-                  >
-                    {experience.company_name}
-                  </p>
-                </div>
-
-                <ul className='my-5 list-disc ml-5 space-y-2'>
-                  {experience.points.map((point, index) => (
-                    <li
-                      key={`experience-point-${index}`}
-                      className='text-black-500/50 font-normal pl-1 text-sm'
-                    >
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </VerticalTimelineElement>
-            ))}
-          </VerticalTimeline>
-        </div>
-      </div>
-
-      <hr className='border-slate-200' />
-
-      <CTA />
     </section>
   );
 };
