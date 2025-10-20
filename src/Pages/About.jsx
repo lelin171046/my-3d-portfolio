@@ -1,8 +1,45 @@
 import React from "react";
 import profileImg from "../assets/images/monir.png"
 import { Link } from "react-router-dom";
+import { IconCloud } from "../Components/ui/icon-cloud";
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+]
 
 const About = () => {
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  )
   return (
     <section className="bg-gradient-to-b from-blue-50 to-white text-gray-800">
       {/* Hero Section */}
@@ -61,9 +98,14 @@ const About = () => {
           </h3>
           <h2 className="text-3xl font-bold text-gray-900">My Services</h2>
         </div>
+       <div className="relative flex p-0 m-0 items-center justify-center overflow-hidden h-screen w-full">
+  <IconCloud images={images} />
+</div>
+
 
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
           {[
+
             { title: "React.js Development", icon: "💻" },
             { title: "MERN Stack Projects", icon: "🌐" },
             { title: "Frontend Design", icon: "🎨" },
