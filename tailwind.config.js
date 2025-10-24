@@ -14,6 +14,21 @@ export default {
         card: "0px 1px 2px 0px rgba(0, 0, 0, 0.05)",
       },
     },
+ keyframes: {
+      marquee: {
+        '0%': { transform: 'translateX(0%)' },
+        '100%': { transform: 'translateX(-50%)' },
+      },
+      'marquee-reverse': {
+        '0%': { transform: 'translateX(-50%)' },
+        '100%': { transform: 'translateX(0%)' },
+      },
+    },
+    animation: {
+      marquee: 'marquee var(--duration, 30s) linear infinite',
+      'marquee-reverse': 'marquee-reverse var(--duration, 30s) linear infinite',
+    },
+
   },
   plugins: [],
 }

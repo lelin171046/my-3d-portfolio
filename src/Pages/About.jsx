@@ -2,6 +2,8 @@ import React from "react";
 import profileImg from "../assets/images/monir.png"
 import { Link } from "react-router-dom";
 import { IconCloud } from "../Components/ui/icon-cloud";
+import { Marquee } from "../Components/ui/marquee";
+import DeveloperServices from "@/Components/DeveloperServices";
 
 const slugs = [
   "typescript",
@@ -36,6 +38,14 @@ const slugs = [
   "figma",
 ]
 
+const techs = [
+  { name: "ReactJS", logo: "https://w7.pngwing.com/pngs/403/269/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.png" },
+  { name: "HTML5", logo: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
+  { name: "CSS3", logo: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+  { name: "JavaScript", logo: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg" },
+  { name: "Tailwind", logo: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" },
+];
+
 const About = () => {
   const images = slugs.map(
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
@@ -52,9 +62,9 @@ const About = () => {
           React.js Developer & MERN Stack Developer
         </p>
         <Link to={'/projects'}>
-        <button className="mt-6 px-6 py-3 bg-black text-white rounded-full shadow hover:bg-blue-700 transition">
-          Visit My Works
-        </button>
+          <button className="mt-6 px-6 py-3 bg-black text-white rounded-full shadow hover:bg-blue-700 transition">
+            Visit My Works
+          </button>
         </Link>
       </div>
 
@@ -74,6 +84,7 @@ const About = () => {
           </h3>
           <h2 className="text-3xl font-bold mb-4 text-gray-900">About Me</h2>
           <p className="text-gray-600 leading-relaxed">
+            <span>Hi,</span>
             I’m a passionate <span className="font-semibold">React.js</span> and{" "}
             <span className="font-semibold">MERN Stack Developer</span> with a
             solid foundation in modern web technologies. I also have strong
@@ -91,37 +102,12 @@ const About = () => {
       </div>
 
       {/* What I Do Section */}
-      <div className="bg-blue-50 py-16">
-        <div className="text-center mb-12">
-          <h3 className="text-blue-600 text-sm font-semibold uppercase mb-1">
-            What I Do
-          </h3>
-          <h2 className="text-3xl font-bold text-gray-900">My Services</h2>
-        </div>
-       <div className="relative flex p-0 m-0 items-center justify-center overflow-hidden h-screen w-full">
-  <IconCloud images={images} />
-</div>
+      <div className="bg-blue-50 ">
+       
 
-
-        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
-          {[
-
-            { title: "React.js Development", icon: "💻" },
-            { title: "MERN Stack Projects", icon: "🌐" },
-            { title: "Frontend Design", icon: "🎨" },
-            { title: "API Integration", icon: "⚙️" },
-          ].map((service, index) => (
-            <div
-              key={index}
-              className="p-6 bg-white rounded-2xl shadow hover:shadow-lg text-center transition"
-            >
-              <div className="text-4xl mb-3">{service.icon}</div>
-              <h4 className="text-lg font-semibold text-gray-800">
-                {service.title}
-              </h4>
-            </div>
-          ))}
-        </div>
+        <section className=" text-white">
+          <DeveloperServices></DeveloperServices>
+        </section>
       </div>
     </section>
   );
