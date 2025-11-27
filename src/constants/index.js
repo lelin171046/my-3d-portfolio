@@ -110,59 +110,48 @@ export const skills = [
 ];
 
 export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+  {
+    title: "Frontend Developer",
+    company_name: "BongoIT – Digital IT Service Center",
+    icon: react,      // Replace with BongoIT logo if available
+    iconBg: "#d1e8ff",
+    date: "2024 - Present",
+    points: [
+      "Developed the official portfolio website for BongoIT, a digital service center specializing in content creation, video editing, and YouTube channel management.",
+      "Built a fully responsive and modern UI using React, Tailwind CSS, and Framer Motion animations.",
+      "Integrated dynamic sections to showcase BongoIT’s services, completed projects, and client workflow.",
+      "Optimized the site for SEO, performance, and smooth user experience across all devices.",
+      "Collaborated with the BongoIT team to refine design, branding, and content presentation.",
+    ],
+  },
+  {
+    title: "Full Stack Developer (Freelancer)",
+    company_name: "Self-Employed",
+    icon: nodejs,
+    iconBg: "#ffe6cc",
+    date: "2023 - 2024",
+    points: [
+      "Developed complete MERN stack applications including authentication, dashboards, and real-time features.",
+      "Worked with REST APIs, MongoDB, and Firebase for secure and scalable backend systems.",
+      "Delivered client-focused solutions with clean UI and optimized UX.",
+      "Handled project deployment using platforms such as Vercel, Netlify, and Render.",
+    ],
+  },
+  {
+    title: "Frontend Developer (Intern)",
+    company_name: "Creative IT Projects",
+    icon: javascript,
+    iconBg: "#f0d1ff",
+    date: "2022 - 2023",
+    points: [
+      "Gained experience building real-world web interfaces using HTML, CSS, JavaScript, and React.",
+      "Converted UI/UX designs into modern, responsive web pages.",
+      "Worked collaboratively using Git and GitHub for project versioning.",
+      "Supported senior developers in building features and debugging production issues.",
+    ],
+  },
 ];
+
 
 export const socialLinks = [
     {
@@ -184,12 +173,13 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
+    iconUrl: pricewise,   // your icon here
+    theme: "btn-back-blue",
+    name: "BongoIT Portfolio Website",
+    description:
+      "Developed a complete portfolio website for BongoIT, a digital IT service center that offers content creation, video editing, and YouTube management. Built with React and Tailwind CSS, featuring animations and responsive design.",
+    link: "https://github.com/lelin171046/bongo-it-client",
+  },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
