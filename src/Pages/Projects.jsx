@@ -42,19 +42,25 @@ const Projects = () => {
               </h4>
               <p className='mt-2 text-slate-500'>{project.description}</p>
               <div className='mt-5 flex items-center gap-2 font-poppins'>
-                <Link
+                <div className="grid grid-cols-2 gap-4 flex-1 flex flex-wrap">
+                  <Link
                   to={project.link}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='font-semibold text-blue-600'
+                  className='font-semibold btn btn-primary text-blue-600'
                 >
                   Live Link
                 </Link>
-                <img
-                  src={arrow}
-                  alt='arrow'
-                  className='w-4 h-4 object-contain'
-                />
+                <Link
+                  to={project.githubLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='font-semibold btn  text-blue-600'
+                >
+                  Github Link
+                </Link>
+                </div>
+               
               </div>
             </div>
           </div>

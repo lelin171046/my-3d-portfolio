@@ -179,7 +179,8 @@ export const projects = [
     name: "BongoIT Portfolio Website",
     description:
       "Developed a complete portfolio website for BongoIT, a digital IT service center that offers content creation, video editing, and YouTube management. Built with React and Tailwind CSS, featuring animations and responsive design.",
-    link: "https://github.com/lelin171046/bongo-it-client",
+    githubLink: "https://github.com/lelin171046/bongo-it-client",
+    liveLink: "https://lovely-cassata-30993c.netlify.app/",
   },
    {
     iconUrl: meta,
@@ -203,12 +204,13 @@ export const projects = [
     link: 'https://incomparable-elf-fd7e32.netlify.app/'
 },
     {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
+    iconUrl: estate,  
+    theme: 'btn-back-red',
+    name: 'Blood Donation Platform',
+    description: 'A full-stack blood donation management system with user authentication, donation requests, donor matching, and an admin dashboard. Built for seamless blood request posting, status updates, and real-time interaction between donors and recipients.',
+    link: 'https://blood-donation-e5309.web.app/'
+}
+,
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
