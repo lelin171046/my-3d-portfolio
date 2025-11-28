@@ -25,6 +25,7 @@ import {
     threads,
     typescript
 } from "../assets/icons";
+import { File, Webcam } from "lucide-react";
 
 export const skills = [
     {
@@ -173,34 +174,34 @@ export const socialLinks = [
 
 export const projects = [
     {
-    iconUrl: pricewise,   // your icon here
+    iconUrl: estate,   // your icon here
     theme: "btn-back-blue",
     name: "BongoIT Portfolio Website",
     description:
       "Developed a complete portfolio website for BongoIT, a digital IT service center that offers content creation, video editing, and YouTube management. Built with React and Tailwind CSS, featuring animations and responsive design.",
     link: "https://github.com/lelin171046/bongo-it-client",
   },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
+   {
+    iconUrl: meta,
+    theme: 'btn-back-green',
+    name: 'Image to PDF Converter',
+    description: 'A simple and efficient web application that allows users to convert images into a single PDF file with just one click. Fully responsive and built for fast performance.',
+    link: 'https://image-to-pdf-just-1-click.netlify.app/'
+},
+   {
+    iconUrl: threads,
+    theme: 'btn-back-blue',
+    name: 'SDATAMastery – Personal Learning Platform',
+    description: 'A personalized education website designed for delivering courses on data structures, Microsoft Excel, and various tech tutorials. Built with a clean UI, smooth navigation, and responsive design to help students learn easily.',
+    link: 'https://limon-sdatamastery.web.app/'
+},
+   {
+    iconUrl: tesla,
+    theme: 'btn-back-orange',
+    name: 'ByteBlaze – Tech Learning Hub',
+    description: 'ByteBlaze serves as a beginner-friendly platform that simplifies complex technology topics, making them easy to understand for curious learners.',
+    link: 'https://incomparable-elf-fd7e32.netlify.app/'
+},
     {
         iconUrl: estate,
         theme: 'btn-back-black',
