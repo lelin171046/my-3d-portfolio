@@ -183,11 +183,21 @@ export const projects = [
     liveLink: "https://lovely-cassata-30993c.netlify.app/",
   },
    {
+    iconUrl: estate,  
+    theme: 'btn-back-red',
+    name: 'Blood Donation Platform',
+    description: 'A full-stack blood donation management system with user authentication, donation requests, donor matching, and an admin dashboard. Built for seamless blood request posting, status updates, and real-time interaction between donors and recipients.',
+    liveLink: 'https://blood-donation-e5309.web.app/',
+    githubLink: 'https://github.com/lelin171046/blood-donation.git',
+}
+,
+   {
     iconUrl: meta,
     theme: 'btn-back-green',
     name: 'Image to PDF Converter',
     description: 'A simple and efficient web application that allows users to convert images into a single PDF file with just one click. Fully responsive and built for fast performance.',
-    link: 'https://image-to-pdf-just-1-click.netlify.app/'
+    liveLink: 'https://image-to-pdf-just-1-click.netlify.app/',
+    githubLink: 'https://image-to-pdf-just-1-click.netlify.app/',
 },
    {
     iconUrl: threads,
@@ -201,16 +211,10 @@ export const projects = [
     theme: 'btn-back-orange',
     name: 'ByteBlaze – Tech Learning Hub',
     description: 'ByteBlaze serves as a beginner-friendly platform that simplifies complex technology topics, making them easy to understand for curious learners.',
-    link: 'https://incomparable-elf-fd7e32.netlify.app/'
+    liveLink: 'https://incomparable-elf-fd7e32.netlify.app/',
+    githubLink: ''
 },
-    {
-    iconUrl: estate,  
-    theme: 'btn-back-red',
-    name: 'Blood Donation Platform',
-    description: 'A full-stack blood donation management system with user authentication, donation requests, donor matching, and an admin dashboard. Built for seamless blood request posting, status updates, and real-time interaction between donors and recipients.',
-    link: 'https://blood-donation-e5309.web.app/'
-}
-,
+   
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
