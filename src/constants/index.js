@@ -202,9 +202,9 @@ export const projects = [
    {
     iconUrl: threads,
     theme: 'btn-back-blue',
-    name: 'SDATAMastery – Personal Learning Platform',
+    name: 'DATA Mastery – Personal Learning Platform',
     description: 'A personalized education website designed for delivering courses on data structures, Microsoft Excel, and various tech tutorials. Built with a clean UI, smooth navigation, and responsive design to help students learn easily.',
-    link: 'https://limon-sdatamastery.web.app/'
+    liveLink: 'https://limon-sdatamastery.web.app/'
 },
    {
     iconUrl: tesla,
@@ -212,7 +212,7 @@ export const projects = [
     name: 'ByteBlaze – Tech Learning Hub',
     description: 'ByteBlaze serves as a beginner-friendly platform that simplifies complex technology topics, making them easy to understand for curious learners.',
     liveLink: 'https://incomparable-elf-fd7e32.netlify.app/',
-    githubLink: ''
+    githubLink: 'https://incomparable-elf-fd7e32.netlify.app/',
 },
    
     {

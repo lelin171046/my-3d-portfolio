@@ -44,7 +44,7 @@ const Projects = () => {
               <div className='mt-5 flex items-center gap-2 font-poppins'>
                 <div className="grid grid-cols-2 gap-4 flex-1 flex flex-wrap">
                   <Link
-                  to={project.link}
+                  to={project.liveLink}
                   target='_blank'
                   rel='noopener noreferrer'
                   className='font-semibold btn btn-primary text-blue-600'
