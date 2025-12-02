@@ -179,8 +179,8 @@ export const projects = [
     name: "BongoIT Portfolio Website",
     description:
       "Developed a complete portfolio website for BongoIT, a digital IT service center that offers content creation, video editing, and YouTube management. Built with React and Tailwind CSS, featuring animations and responsive design.",
+      liveLink: "https://lovely-cassata-30993c.netlify.app/",
     githubLink: "https://github.com/lelin171046/bongo-it-client",
-    liveLink: "https://lovely-cassata-30993c.netlify.app/",
   },
    {
     iconUrl: estate,  

@@ -42,7 +42,7 @@ const Projects = () => {
               </h4>
               <p className='mt-2 text-slate-500'>{project.description}</p>
               <div className='mt-5 flex items-center gap-2 font-poppins'>
-                <div className="grid grid-cols-2 gap-4 flex-1 flex flex-wrap">
+                <div className="grid grid-cols-2 gap-4 flex-1  flex-wrap">
                   <Link
                   to={project.liveLink}
                   target='_blank'

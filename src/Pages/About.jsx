@@ -95,9 +95,16 @@ const About = () => {
             real impact.
           </p>
 
-          <button className="mt-6 px-5 py-2 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">
-            Download CV
-          </button>
+        <a
+  href="https://drive.google.com/file/d/1HazS1Yvo-SF-HsHjmUF9EvO-H3VoHScA/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="mt-6 px-5 py-2 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition">
+    Download CV
+  </button>
+</a>
+
         </div>
       </div>
 
